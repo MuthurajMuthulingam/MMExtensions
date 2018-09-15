@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMExtensions'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A common extensions written on standard classes for Standard iOS applications written using Swift'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'A common extensions written on standard classes for Standard iOS applications written using Swift'
+  s.description      = 'A common extensions written on standard classes for Standard iOS applications written using Swift. One stop for all your extension needs on standard classes'
 
   s.homepage         = 'https://github.com/MuthurajMuthulingam/MMExtensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
