@@ -1,0 +1,6 @@
+framework module MMExtensions {
+  umbrella header "MMExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

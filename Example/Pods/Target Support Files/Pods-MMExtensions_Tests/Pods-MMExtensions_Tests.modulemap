@@ -1,0 +1,6 @@
+framework module Pods_MMExtensions_Tests {
+  umbrella header "Pods-MMExtensions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

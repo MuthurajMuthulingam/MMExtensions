@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MMExtensions'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MMExtensions.'
+  s.summary          = 'A common extensions written on standard classes for Standard iOS applications written using Swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,18 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A common extensions written on standard classes for Standard iOS applications written using Swift'
 
-  s.homepage         = 'https://github.com/Muthuraj Muthulingam/MMExtensions'
+  s.homepage         = 'https://github.com/MuthurajMuthulingam/MMExtensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Muthuraj Muthulingam' => 'muthurajmuthulingam@gmail.com' }
-  s.source           = { :git => 'https://github.com/Muthuraj Muthulingam/MMExtensions.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MuthurajMuthulingam/MMExtensions.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'MMExtensions/Classes/**/*'
   
