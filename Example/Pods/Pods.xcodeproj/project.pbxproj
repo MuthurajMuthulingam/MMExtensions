@@ -12,6 +12,7 @@
 		66489703214E79750063FCFC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489701214E79740063FCFC /* UIView+Extensions.swift */; };
 		66489704214E79750063FCFC /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489702214E79750063FCFC /* CALayer+Extensions.swift */; };
 		66489706214E79A80063FCFC /* CAAnimation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489705214E79A80063FCFC /* CAAnimation+Extensions.swift */; };
+		6648970A214E81690063FCFC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489709214E81680063FCFC /* UIViewController+Extensions.swift */; };
 		6C0AFF3C469399F6CF2F46F1A656429F /* Pods-MMExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5F4970E84E93E84EB9C3D6C1DE5034 /* Pods-MMExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB0831B527C97EBD75B84E8227D451B /* MMExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC2676663B8F69A116CFD097925BF3B /* MMExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9880B006881ADD629DD0C567746E83 /* Pods-MMExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2187C0C48BB9C0B16A7D0A0BD9D3B22 /* Pods-MMExtensions_Tests-dummy.m */; };
@@ -55,6 +56,7 @@
 		66489701214E79740063FCFC /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "MMExtensions/Classes/UIView+Extensions.swift"; sourceTree = "<group>"; };
 		66489702214E79750063FCFC /* CALayer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Extensions.swift"; path = "MMExtensions/Classes/CALayer+Extensions.swift"; sourceTree = "<group>"; };
 		66489705214E79A80063FCFC /* CAAnimation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CAAnimation+Extensions.swift"; path = "MMExtensions/Classes/CAAnimation+Extensions.swift"; sourceTree = "<group>"; };
+		66489709214E81680063FCFC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "MMExtensions/Classes/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		6E72F020BB28774229EE080169A4B575 /* Pods-MMExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6EBF75F245E2B56E336443832532FFAA /* MMExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMExtensions.modulemap; sourceTree = "<group>"; };
 		7D6012E0CBEDCD62A43DC3DFA529D860 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		27C0EDE7973D6B534D48E1BA1E740BAB /* MMExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				66489709214E81680063FCFC /* UIViewController+Extensions.swift */,
 				66489702214E79750063FCFC /* CALayer+Extensions.swift */,
 				66489701214E79740063FCFC /* UIView+Extensions.swift */,
 				66489705214E79A80063FCFC /* CAAnimation+Extensions.swift */,
@@ -367,6 +370,7 @@
 			files = (
 				66489703214E79750063FCFC /* UIView+Extensions.swift in Sources */,
 				66489706214E79A80063FCFC /* CAAnimation+Extensions.swift in Sources */,
+				6648970A214E81690063FCFC /* UIViewController+Extensions.swift in Sources */,
 				DE1195581B0DF34DF6C88E79FC702D1C /* MMExtensions-dummy.m in Sources */,
 				66489704214E79750063FCFC /* CALayer+Extensions.swift in Sources */,
 			);
