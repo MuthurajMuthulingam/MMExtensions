@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MMExtensions
 
 class ViewController: UIViewController {
 
