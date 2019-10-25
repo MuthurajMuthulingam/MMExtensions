@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIImage {
-    public func resizeImage(targetSize: CGSize) -> UIImage? {
+    func resizeImage(targetSize: CGSize) -> UIImage? {
         
         let widthRatio  = targetSize.width  / size.width
         let heightRatio = targetSize.height / size.height
@@ -33,5 +33,14 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         
         return newImage
+    }
+    
+    func tinted(with color: UIColor) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        defer { UIGraphicsEndImageContext() }
+        color.set()
+        withRenderingMode(.alwaysTemplate)
+            .draw(in: CGRect(origin: .zero, size: size))
+        return UIGraphicsGetImageFromCurrentImageContext()
     }
 }

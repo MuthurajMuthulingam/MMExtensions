@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Custom Initializer to CAShape Layer
 public extension CAShapeLayer {
-    public convenience init(with path: CGPath, color: UIColor, fillColor: UIColor, lineWidth: CGFloat) {
+    convenience init(with path: CGPath, color: UIColor, fillColor: UIColor, lineWidth: CGFloat) {
         self.init()
         self.path = path
         self.strokeColor = color.cgColor
@@ -20,7 +20,7 @@ public extension CAShapeLayer {
         self.fillColor = fillColor.cgColor
     }
     
-    public func applyShadow(color: UIColor, offSet: CGSize, opacity: Float, radius: CGFloat) {
+    func applyShadow(color: UIColor, offSet: CGSize, opacity: Float, radius: CGFloat) {
         self.shadowColor = color.cgColor
         self.shadowOffset = offSet
         self.shadowOpacity = opacity
@@ -29,7 +29,7 @@ public extension CAShapeLayer {
 }
 
 public extension CATextLayer {
-    public convenience init(with bounds: CGRect, text: String?) {
+    convenience init(with bounds: CGRect, text: String?) {
         self.init()
         self.bounds = bounds
         self.string = text
@@ -74,19 +74,19 @@ public extension Array where Element == CGPoint {
         return (minValue,minPoint)
     }
     
-    public func minYValue() -> (minValue: CGFloat, point: CGPoint) {
+    func minYValue() -> (minValue: CGFloat, point: CGPoint) {
         return minValue(axis: .y)
     }
     
-    public func maxYValue() -> (minValue: CGFloat, point: CGPoint) {
+    func maxYValue() -> (minValue: CGFloat, point: CGPoint) {
         return maxValue(axis: .y)
     }
     
-    public func minXValue() -> (minValue: CGFloat, point: CGPoint) {
+    func minXValue() -> (minValue: CGFloat, point: CGPoint) {
         return minValue(axis: .x)
     }
     
-    public func maxXValue() -> (minValue: CGFloat, point: CGPoint) {
+    func maxXValue() -> (minValue: CGFloat, point: CGPoint) {
         return maxValue(axis: .x)
     }
 }

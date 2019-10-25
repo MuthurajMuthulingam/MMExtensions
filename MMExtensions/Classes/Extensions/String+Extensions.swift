@@ -53,9 +53,9 @@ extension String {
         return String(self[index] as Character)
     }
     
-    subscript (range: CountableClosedRange<Int>) -> String {
-        let start = index(startIndex, offsetBy: range.lowerBound)
-        let end = index(startIndex, offsetBy: range.upperBound)
-        return String(self[Range(start ..< end)])
-    }
+//    subscript (range: CountableClosedRange<Int>) -> String {
+//        let start = index(startIndex, offsetBy: range.lowerBound)
+//        let end = index(startIndex, offsetBy: range.upperBound)
+//        return String(self[Range(start ..< end)])
+//    }
 }

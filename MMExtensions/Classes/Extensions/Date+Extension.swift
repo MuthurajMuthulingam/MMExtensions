@@ -12,12 +12,12 @@ public enum MMDateFormat: String {
 
 public extension Date
 {
-    public init(withMilliseconds date: Int64) {
+    init(withMilliseconds date: Int64) {
         self.init(timeIntervalSince1970: TimeInterval(date / 1000))
     }
     
     /// convert string from milliseconds value
-    public static func stringFromMilliSeconds(date:Int64, format : MMDateFormat = .mmmDDYYY) -> String
+    static func stringFromMilliSeconds(date:Int64, format : MMDateFormat = .mmmDDYYY) -> String
     {
         let date = Date(withMilliseconds: date)
         let dateFormatter = DateFormatter()
@@ -27,7 +27,7 @@ public extension Date
     }
     
     /// returns string friendly format
-    public func timeAgoWithCurrentTime(_ timestamp : Int64) -> String {
+    func timeAgoWithCurrentTime(_ timestamp : Int64) -> String {
         
         let interval = timestamp
         let now:Date = NSDate(timeIntervalSince1970: TimeInterval(interval)) as Date
@@ -92,6 +92,11 @@ public extension Date
         minutes = (floor(deltaMinutes/(60 * 24 * 365)))
         return String(format: "%.0f years ago".localized(),minutes)
     }
+    
+    func dayNumberOfWeek() -> Int? {
+        return Calendar.current.dateComponents([.weekday], from: self).weekday
+    }
+    
 }
 
 
