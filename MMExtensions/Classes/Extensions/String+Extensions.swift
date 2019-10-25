@@ -56,6 +56,6 @@ extension String {
     subscript (range: CountableClosedRange<Int>) -> String {
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(startIndex, offsetBy: range.upperBound)
-        return String(self[Range(start ..< end)])
+        return String(self[start ..< end])
     }
 }
