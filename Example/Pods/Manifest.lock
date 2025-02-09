@@ -1,5 +1,5 @@
 PODS:
-  - MMExtensions (0.1.0)
+  - MMExtensions (0.0.4)
 
 DEPENDENCIES:
   - MMExtensions (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MMExtensions: 5dd82bd1af2d515a6f18e54b8ce83f4b379552fa
+  MMExtensions: 33459b034388058dd2a5fd44d82ec5ccf8f853ca
 
 PODFILE CHECKSUM: b4ee181ec2cd8002e72b8f1140f911c3d46b5647
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.16.2
