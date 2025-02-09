@@ -36,7 +36,7 @@ public extension CATextLayer {
     }
 }
 
-extension CGPoint: Comparable {
+extension CGPoint: @retroactive Comparable {
     public static func <(lhs: CGPoint, rhs: CGPoint) -> Bool {
         return lhs.x < rhs.x && lhs.y < rhs.y
     }
