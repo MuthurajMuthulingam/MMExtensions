@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMExtensions'
-  s.version          = '0.0.4'
+  s.version          = '1.0.0'
   s.summary          = 'A common extensions written on standard classes for Standard iOS applications written using Swift'
 
 # This description is used to generate tags and improve search results.
@@ -20,20 +20,18 @@ Pod::Spec.new do |s|
   s.description      = 'A common extensions written on standard classes for Standard iOS applications written using Swift. One stop for all your extension needs on standard classes'
 
   s.homepage         = 'https://github.com/MuthurajMuthulingam/MMExtensions'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Muthuraj Muthulingam' => 'muthurajmuthulingam@gmail.com' }
   s.source           = { :git => 'https://github.com/MuthurajMuthulingam/MMExtensions.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '16.0'
   s.swift_version = '4.0'
 
   s.source_files = 'MMExtensions/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MMExtensions' => ['MMExtensions/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'MMExtensions' => ['MMExtensions/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
