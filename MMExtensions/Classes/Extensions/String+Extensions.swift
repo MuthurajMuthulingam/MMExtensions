@@ -17,12 +17,12 @@ extension String {
     }
     
     func heightForBounding(_ size: CGSize, font: UIFont) -> CGFloat {
-        let rect = (self as NSString).boundingRect(with: size, options: [ NSStringDrawingOptions.usesLineFragmentOrigin ], attributes: [NSAttributedStringKey.font: font], context: nil)
+        let rect = (self as NSString).boundingRect(with: size, options: [ NSStringDrawingOptions.usesLineFragmentOrigin ], attributes: [NSAttributedString.Key.font: font], context: nil)
         return rect.size.height
     }
     
     func widthFor(_ size: CGSize, font: UIFont) -> CGFloat {
-        let rect = (self as NSString).boundingRect(with: size, options: [ NSStringDrawingOptions.usesLineFragmentOrigin ], attributes: [NSAttributedStringKey.font: font], context: nil)
+        let rect = (self as NSString).boundingRect(with: size, options: [ NSStringDrawingOptions.usesLineFragmentOrigin ], attributes: [NSAttributedString.Key.font: font], context: nil)
         return rect.size.width
     }
     

@@ -15,8 +15,8 @@ public extension CAShapeLayer {
         self.path = path
         self.strokeColor = color.cgColor
         self.lineWidth = lineWidth
-        self.lineJoin = kCALineJoinRound
-        self.lineCap = kCALineCapRound
+        self.lineJoin = CAShapeLayerLineJoin.round
+        self.lineCap = CAShapeLayerLineCap.round
         self.fillColor = fillColor.cgColor
     }
     

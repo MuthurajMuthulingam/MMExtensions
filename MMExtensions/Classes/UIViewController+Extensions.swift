@@ -61,19 +61,22 @@ public struct MMUIDialogAlert: MMUIDialogAlertRules {
 }
 
 public protocol MMAlertRules {
-    func showAlert(using alertInfo: MMUIAlert)
-    func showDiologAlert(using dialogAlertInfo: MMUIDialogAlert)
+    @MainActor func showAlert(using alertInfo: MMUIAlert) async
+    @MainActor func showDiologAlert(using dialogAlertInfo: MMUIDialogAlert) async
 }
 
 extension MMAlertRules where Self: UIViewController {
-    public func showAlert(using alertInfo: MMUIAlert) {
+    
+    @MainActor
+    public func showAlert(using alertInfo: MMUIAlert) async {
         let alert = UIAlertController(title: alertInfo.title, message: alertInfo.message, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: alertInfo.cancelButtonTitle, style: .cancel, handler: alertInfo.cancelButtonAction)
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: alertInfo.completionBlock)
     }
     
-    public func showDiologAlert(using dialogAlert: MMUIDialogAlert) {
+    @MainActor
+    public func showDiologAlert(using dialogAlert: MMUIDialogAlert) async {
         let alert = UIAlertController(title: dialogAlert.title, message: dialogAlert.message, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: dialogAlert.cancelButtonTitle, style: .cancel, handler: dialogAlert.cancelButtonAction)
         alert.addAction(cancelAction)
