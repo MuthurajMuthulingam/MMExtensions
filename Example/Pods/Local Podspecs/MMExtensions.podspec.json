@@ -1,6 +1,6 @@
 {
   "name": "MMExtensions",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "summary": "A common extensions written on standard classes for Standard iOS applications written using Swift",
   "description": "A common extensions written on standard classes for Standard iOS applications written using Swift. One stop for all your extension needs on standard classes",
   "homepage": "https://github.com/MuthurajMuthulingam/MMExtensions",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/MuthurajMuthulingam/MMExtensions.git",
-    "tag": "0.0.4"
+    "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "16.0"
   },
-  "swift_versions": "4.0",
+  "swift_versions": "6.0",
   "source_files": "MMExtensions/Classes/**/*",
-  "swift_version": "4.0"
+  "swift_version": "6.0"
 }
