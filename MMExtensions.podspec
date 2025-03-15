@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.0'
   s.swift_version = '6.0'
 
-  s.source_files = 'MMExtensions/Classes/**/*'
+  s.source_files = 'MMExtensions/Classes/Extensions/**/*'
   
 end
