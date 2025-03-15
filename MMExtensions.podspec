@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMExtensions'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A common extensions written on standard classes for Standard iOS applications written using Swift'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,4 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MMExtensions/Classes/**/*'
   
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
