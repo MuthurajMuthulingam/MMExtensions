@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - UIView Constraints
-public extension UIView {
+@MainActor public extension UIView {
     func setConstraintRelativeSize(relatedSuperView superView: UIView?, offset: CGFloat) {
         self.translatesAutoresizingMaskIntoConstraints = false
         let leading = NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: superView, attribute: .leading, multiplier: 1, constant: offset)

@@ -8,35 +8,35 @@
 
 import UIKit
 
-extension UITextField {
+@MainActor extension UITextField {
     override open var accessibilityValue: String? {
         get { return super.accessibilityValue ?? self.text }
         set { super.accessibilityValue = newValue }
     }
 }
 
-extension UILabel {
+@MainActor extension UILabel {
     override open var accessibilityValue: String? {
         get { return super.accessibilityValue ?? self.text }
         set { super.accessibilityValue = newValue }
     }
 }
 
-extension UIButton {
+@MainActor extension UIButton {
     override open var accessibilityValue: String? {
         get { return super.accessibilityValue ?? self.title(for: .normal) }
         set { super.accessibilityValue = newValue }
     }
 }
 
-extension UIImageView {
+@MainActor extension UIImageView {
     override open var accessibilityValue: String? {
         get { return super.accessibilityValue ?? self.accessibilityIdentifier }
         set { super.accessibilityValue = newValue }
     }
 }
 
-extension UITabBarItem {
+@MainActor extension UITabBarItem {
     override open var accessibilityValue: String? {
         get { return super.accessibilityValue ?? self.title }
         set { super.accessibilityValue = newValue }
@@ -48,7 +48,7 @@ extension UITabBarItem {
     }
 }
 
-extension UISegmentedControl {
+@MainActor extension UISegmentedControl {
     override open var accessibilityValue: String? {
         get { return super.accessibilityValue ?? titleForSegment(at: selectedSegmentIndex) }
         set { super.accessibilityValue = newValue }

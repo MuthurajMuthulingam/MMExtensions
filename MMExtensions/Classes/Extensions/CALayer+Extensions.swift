@@ -8,8 +8,7 @@
 
 import UIKit
 
-// MARK: - Custom Initializer to CAShape Layer
-public extension CAShapeLayer {
+@MainActor public extension CAShapeLayer {
     convenience init(with path: CGPath, color: UIColor, fillColor: UIColor, lineWidth: CGFloat) {
         self.init()
         self.path = path
@@ -28,7 +27,7 @@ public extension CAShapeLayer {
     }
 }
 
-public extension CATextLayer {
+@MainActor public extension CATextLayer {
     convenience init(with bounds: CGRect, text: String?) {
         self.init()
         self.bounds = bounds
@@ -37,8 +36,9 @@ public extension CATextLayer {
 }
 
 extension CGPoint: @retroactive Comparable {
-    public static func <(lhs: CGPoint, rhs: CGPoint) -> Bool {
-        return lhs.x < rhs.x && lhs.y < rhs.y
+    public static func < (lhs: CGPoint, rhs: CGPoint) -> Bool {
+        if lhs.x != rhs.x { return lhs.x < rhs.x }
+        return lhs.y < rhs.y
     }
 }
 
@@ -62,7 +62,7 @@ public extension Array where Element == CGPoint {
     }
     
     private func maxValue(axis: Axis) -> (minValue: CGFloat, point: CGPoint) {
-        var minValue: CGFloat = .leastNormalMagnitude
+        var minValue: CGFloat = -.greatestFiniteMagnitude
         var minPoint: CGPoint = .zero
         for point in self {
             let value:CGFloat = (axis == .x) ? point.x : point.y
