@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public extension UIImage {
+@MainActor public extension UIImage {
     func resizeImage(targetSize: CGSize) -> UIImage? {
         
         let widthRatio  = targetSize.width  / size.width
@@ -27,7 +27,7 @@ public extension UIImage {
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
         
         // Actually do the resizing to the rect using the ImageContext stuff
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
         draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
